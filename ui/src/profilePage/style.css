@@ -1,0 +1,503 @@
+.profile-pg {
+    margin: 0;
+}
+
+.alter-nav {
+    width: 95%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+.profile-pg-inner {
+    display: flex;
+    gap: 0;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.profile-lft {
+    flex-basis: 25%;
+}
+
+.profile-side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2rem 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.profile-side-bar h3 {
+    text-transform: uppercase;
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    text-align: center;
+}
+/* #C45C5C */
+.profile-side-bar h3:last-child {
+    color: #c45c5c;
+}
+.profile-head {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: var(--normal_green);
+    font-family: Montserrat;
+    font-weight: 200;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.profile-content-section {
+    flex-basis: 75%;
+    background-color: #fff;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.pro-grp1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pro-grp1 .img-grp {
+    flex-basis: 25%;
+}
+.pro-grp1 .img-grp h6,
+.pro-grp1 .upload-grp h6 {
+    text-transform: uppercase;
+}
+.pro-grp1 .upload-grp {
+    flex-basis: 60%;
+}
+.w-small {
+    width: 70%;
+}
+.pro-grp2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.pro-grp2 h3 {
+    text-transform: uppercase;
+}
+
+.pro-grp3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pro-grp3 .pro-grp3-gp1,
+.pro-grp3 .pro-grp3-gp2 {
+    flex-basis: 45%;
+}
+.pro-grp3 .pro-grp3-gp1 h5,
+.pro-grp4 h5 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.pro-grp3 .pro-grp3-gp1 .items-grp {
+    padding-top: 3rem;
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    color: var(--font-green);
+}
+
+.pro-grp3 .pro-grp3-gp1 .items-grp p {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 0.7rem 0;
+    border-radius: 5px;
+}
+
+.pro-grp3 .pro-grp3-gp1 .items-grp :last-child {
+    background: #fff;
+}
+
+.pro-grp3 .pro-grp3-gp2 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.pro-grp3 .pro-grp3-gp2 .abt-grp {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.pro-grp3 .pro-grp3-gp2 .abt-grp .abt-grp-itm {
+    width: 25%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pro-grp3 .pro-grp3-gp2 .abt-grp .abt-grp-itm div {
+    text-transform: capitalize;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.grid-grps-logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.pro-lst-save-btn {
+    width: 12%;
+    padding: 0.1rem 0;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* profile page acivities tab styles */
+
+.profile-act {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.profile-act h1 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.profile-act nav {
+    display: flex;
+    justify-content: space-around;
+}
+.profile-act nav div {
+    flex-basis: 45%;
+}
+.profile-act-grp1 {
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profile-act nav .lst-chd {
+    display: flex;
+    justify-content: right;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-align: left;
+}
+
+.profile-act-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* profile page notifications tab styles */
+
+.profile-notfi {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.profile-notfi .profile-notfi-heading-grp h1,
+.profile-accDetails .acc-grp h1 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.profile-notfi .profile-notfi-heading-grp h6,
+.profile-accDetails .acc-grp h6 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.profile-notfi .profile-notfi-heading-grp h6 span,
+.profile-accDetails .acc-grp h6 span {
+    color: #5cc46b;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.profile-notfi-center-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-notfi-center-container h3 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.profile-notfi-center-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.pro-notfi-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.pro-notfi-card:nth-child(odd) {
+    background-color: #def3e1;
+}
+.pro-notfi-card:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.pro-notfi-card h3 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.pro-notfi-card p {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+.pro-notfi-card h3 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.profile-notfi-save-btn {
+    width: 12%;
+    align-self: center;
+    padding: 0.1rem 0;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.per-comp {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #c45c5c;
+}
+
+/* account details styles */
+
+.profile-accDetails {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.profile-accDetails .acc-grp h1 {
+    font-family: Montserrat;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.close-acc {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    cursor: pointer;
+    color: #c45c5c;
+}
+
+.accDet-save {
+    width: 12%;
+    padding: 0.1rem 0;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.accDet-cen {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accDet-cen input {
+    padding: 1rem;
+}
+.accDet-cen input ::placeholder {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.accDet-cen label {
+    margin-bottom: 1rem;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-align: left;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .profile-lft {
+      display: none;
+    }
+
+    .profile-content-section {
+        flex-basis: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        height: fit-content;
+    }
+
+    .pro-grp3 {
+        display: flex;
+     flex-direction: column;
+     gap: 1rem;
+    }
+    .pro-grp1 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .upload-grp{
+        width: 100%;
+    }
+    .pro-lst-save-btn,.profile-notfi-save-btn ,.accDet-save{
+        width: 30%;
+    }
+
+    .grid-grps-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .profile-act-card-grid {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .profile-notfi-center-grid {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+  }

@@ -1,0 +1,11 @@
+.profile-pro{
+    padding: 3rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    height: 80%;
+    gap: 2rem;
+    
+}

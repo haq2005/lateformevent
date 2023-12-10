@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.register-layout {
+    width: 100%;
+    /* background-color: aqua; */
+    min-height: 100vh;
+}
+
+.register-layout h3 {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0em;
+    color: #5cc46b;
+}
+
+.inner-con-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-vec {
+    flex-basis: 40%;
+}
+
+.progress-bar {
+    width: 25%;
+    margin: auto;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.progress-bar div {
+    flex-basis: 20%;
+    background-color: red;
+    max-height: 5px;
+    margin-top: 0.6rem;
+}
+
+.content-rght {
+    flex-basis: 60%;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.content-rght h1 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.content-rght form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.content-rght form:first-child() {
+    padding-top: 1rem;
+    background-color: #5cc46b;
+}
+.content-rght form h4 {
+    align-self: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.content-rght form div {
+    width: 75%;
+    align-self: center;
+}
+
+.content-rght form button {
+    width: 25%;
+    border: none;
+    padding: 0.7rem;
+    align-self: center;
+    text-transform: uppercase;
+    border: 1px solid greenyellow;
+    background-color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+}
+
+.content-rght form h5 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-vec {
+        display: none;
+    }
+
+    .content-rght {
+        flex-basis: 100%;
+        margin-top: 5rem;
+    }
+    .content-rght form {
+        width: 95%;
+    }
+    .content-rght form input {
+        width: 90%;
+    }
+    .content-rght form button {
+        width: 35%;
+    }
+}
+
+/* <form className="mt-1 p-3" onSubmit={formik.handleSubmit}>
+<div className="form-group">
+  <input
+    type="text"
+    placeholder="Full name"
+    className="form-control"
+    name="fullName"
+    onChange={formik.handleChange}
+    value={formik.values.fullName}
+  />
+  {formik.errors.fullName ? (
+    <p className="text-danger">{formik.errors.fullName}</p>
+  ) : null}
+</div>
+<div className="form-group">
+  <input
+    type="text"
+    placeholder="Organization name*"
+    className="form-control"
+    name="organizationName"
+    onChange={formik.handleChange}
+    value={formik.values.organizationName}
+  />
+  {formik.errors.organizationName ? (
+    <p className="text-danger">
+      {formik.errors.organizationName}
+    </p>
+  ) : null}
+</div>
+<div className="form-group">
+  <input
+    type="email"
+    placeholder="Email*"
+    className="form-control"
+    name="email"
+    onChange={formik.handleChange}
+    value={formik.values.email}
+  />
+  {formik.errors.email ? (
+    <p className="text-danger">{formik.errors.email}</p>
+  ) : null}
+</div>
+<div className="form-group">
+  <input
+    type="password"
+    placeholder="Password*"
+    className="form-control"
+    name="password"
+    onChange={formik.handleChange}
+    value={formik.values.password}
+  />
+  {formik.errors.password ? (
+    <p className="text-danger">{formik.errors.password}</p>
+  ) : null}
+</div>
+<div className="form-group">
+  <input
+    type="email"
+    placeholder="recovery email"
+    className="form-control"
+    name="recoveryEmail"
+    onChange={formik.handleChange}
+    value={formik.values.recoveryEmail}
+  />
+  {formik.errors.recoveryEmail ? (
+    <p className="text-danger">{formik.errors.recoveryEmail}</p>
+  ) : null}
+</div>
+<div className="form-group">
+  <select
+    className="form-select"
+    onChange={formik.handleChange}
+    value={formik.values.role}
+    name="role"
+  >
+    <option></option>
+    <option value="training admininstration">
+      Training administration
+    </option>
+    <option value="management">Management</option>
+    <option value="marketing">Marketing</option>
+    <option value="sales">Sales</option>
+    <option value="finance">Finance</option>
+    <option value="it">IT</option>
+    <option value="staff">Staff</option>
+    <option value="other">Others</option>
+  </select>
+  {formik.errors.role ? (
+    <p className="text-danger">{formik.errors.role}</p>
+  ) : null}
+</div>
+{submit ? (
+  <button className="btn btn-outline-success btn-full" disabled>
+    registering...{" "}
+    <div className="spinner-border text-success" role="status">
+      <span className="sr-only"></span>
+    </div>
+  </button>
+) : (
+  <button className="btn btn-dark btn-full">
+    Register as an Hoster
+  </button>
+)}
+<Link
+  to="/organizerLogin"
+  className="mt-5 text-center text-decoration-none text-wrap"
+>
+  already have a account?login in as an Hoster
+</Link>
+</form> */
